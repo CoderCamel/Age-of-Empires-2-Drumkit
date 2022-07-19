@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid black;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+
+.grid {
+    display: grid;
+    position: relative;
+    top: 200px;
+    grid-template-columns: repeat(9, 1fr);
+
+}
+
+.key {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+}
