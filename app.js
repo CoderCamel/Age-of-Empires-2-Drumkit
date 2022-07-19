@@ -5,8 +5,20 @@ window.addEventListener("keydown", function(e) {
         return;
     }
     const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
-    console.log(key);
     audio.currentTime = 0; // enables key spamming
     audio.play();
     key.classList.add("playing");
+
+    const keys = document.querySelectorAll(".key");
+    keys.forEach(key => {
+        key.addEventListener("transitionend", removeTransition);
+    });
+
 });
+
+function removeTransition(e) {
+    if (e.propertyName !== "transform") {
+        return;
+    }
+    this.classList.remove("playing");
+}
