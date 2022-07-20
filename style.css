@@ -38,7 +38,9 @@ a:link, a:visited {
     display: grid;
     position: relative;
     top: 40vh;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
 }
 
 .key {
@@ -64,3 +66,9 @@ a:link, a:visited {
     border-color: #f1c821;
     box-shadow: 0 0 10px black;
 }
+/*
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 5 1fr;
+    }
+}*/
