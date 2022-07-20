@@ -66,9 +66,10 @@ a:link, a:visited {
     border-color: #f1c821;
     box-shadow: 0 0 10px black;
 }
-/*
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 480px) {
     .grid {
-        grid-template-columns: 5 1fr;
+        top: 5vh;
     }
-}*/
+}
+
