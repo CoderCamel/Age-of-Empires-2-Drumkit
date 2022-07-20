@@ -9,7 +9,10 @@
 }
 
 body {
+    height: 100vh;
     background-image: url("images/background.jpg");
+    background-size: auto 115.5%;
+    
 }
 
 kbd {
